@@ -10,6 +10,7 @@ public class Main {
             System.out.println("Начать новую игру(Н) или выйти(В) из приложения ?");
             char select = scanner.next().charAt(0);
             if ((select == 'Н') || (select == 'н')) {
+                Dictionary.initWords();
                 Game.start();
             } else if ((select == 'В') || (select == 'в')) {
                 scanner.close();
